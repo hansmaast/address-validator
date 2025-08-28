@@ -1,4 +1,4 @@
-# DI | Case
+# DI | Address validator
 
 ## Setup
 1. Clone the [repository]()
