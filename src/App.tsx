@@ -1,5 +1,5 @@
 import React from 'react';
-import { GMapsAddressLink } from './AddressCard';
+import { AddressCard } from './AddressCard';
 import { getStreetCollection, getStreetNumbers } from './addressHelperApi';
 import type { Address, Street, StreetNumber } from './types';
 import { extractStreetName, extractStreetNumber } from './utils';
@@ -107,7 +107,7 @@ function App() {
         <p className="text-base p-4 place-self-center">{message}</p>
       </form>
 
-      {validAddress && <GMapsAddressLink address={validAddress} />}
+      {validAddress && <AddressCard address={validAddress} />}
     </div>
   );
 }

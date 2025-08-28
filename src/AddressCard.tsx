@@ -1,6 +1,6 @@
 import type { Address } from './types';
 
-export const GMapsAddressLink = ({ address }: { address: Address }) => {
+export const AddressCard = ({ address }: { address: Address }) => {
   const { number } = address;
 
   const gMapsHref = `https://www.google.com/maps/search/?api=1&query=${number.latitude},${number.longitude}`;
